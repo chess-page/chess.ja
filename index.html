@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" itemscope itemtype="https://schema.org/Game">
+  <head>
+    <title>チェスのルール — わかりやすい完全ガイド</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!-- SEO -->
+    <meta name="description" content="チェスのルールをわかりやすく解説：初期配置、駒の動き、キャスリング、アンパッサン、昇格、チェックメイト、ステイルメイト、引き分け（50手ルールを含む）。">
+    <meta name="keywords" content="チェス ルール, チェス, チェスの遊び方, キャスリング, アンパッサン, 昇格, チェックメイト, ステイルメイト, 引き分け, 50手ルール">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Cyril Veltin">
+
+    <!-- Canonical + languages -->
+    <link rel="canonical" href="https://ja.chess.page/">
+    <link rel="alternate" hreflang="en" href="https://en.chess.page/">
+    <link rel="alternate" hreflang="fr" href="https://fr.chess.page/">
+    <link rel="alternate" hreflang="ja" href="https://ja.chess.page/">
+    <link rel="alternate" hreflang="th" href="https://th.chess.page/">
+    <link rel="alternate" hreflang="zh" href="https://zh.chess.page/">
+    <link rel="alternate" hreflang="x-default" href="https://chess.page/">
+
+    <!-- Icon -->
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/props.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/all.css" media="all">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="stylesheet" href="css/screen.css" media="screen">
+
+    <!-- License -->
+    <meta name="dcterms.rights" content="https://creativecommons.org/publicdomain/zero/1.0/">
+    <meta name="dcterms.rightsHolder" content="Cyril Veltin">
+    <meta name="license" content="CC0-1.0">
+    <link rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Chess Page">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ja.chess.page/">
+    <meta property="og:title" content="チェスのルール — わかりやすい完全ガイド">
+    <meta property="og:description" content="チェスのルール：初期配置、駒の動き、特別な手、チェックメイト、ステイルメイト、引き分け（50手ルールを含む）。">
+    <meta property="og:image" content="https://ja.chess.page/img/caissa-and-mercury-apollo-game.jpeg">
+    <meta property="og:image:alt" content="カイッサの挿絵（パブリックドメイン）。">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="チェスのルール — わかりやすい完全ガイド">
+    <meta name="twitter:description" content="チェスのルールをわかりやすく：駒、動き、キャスリング、アンパッサン、昇格、チェックメイト、ステイルメイト、引き分け。">
+    <meta name="twitter:image" content="https://ja.chess.page/img/caissa-and-mercury-apollo-game.jpeg">
+    <meta name="twitter:image:alt" content="カイッサの挿絵（パブリックドメイン）。">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@id": "https://ja.chess.page/#game",
+        "@type": "Game",
+        "name": "チェス",
+        "alternateName": "ゲームの王",
+        "description": "64マスの盤上で2人で行う戦略ゲーム。相手のキングをチェックメイトして勝利する。",
+        "url": "https://ja.chess.page/",
+        "image": "https://ja.chess.page/img/caissa-and-mercury-apollo-game.jpeg",
+        "inLanguage": "ja-JP",
+        "numberOfPlayers": "2",
+        "keywords": [
+          "チェス",
+          "チェスのルール",
+          "戦略ゲーム",
+          "チェックメイト",
+          "チェスの駒"
+        ],
+        "educationalUse": [
+          "戦略",
+          "論理",
+          "計画"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "copyrightHolder": {
+          "@type": "Person",
+          "name": "Cyril Veltin"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <img src="favicon.svg" alt="Chess Page ロゴ" height="1024" width="1024">
+    </header>
+
+    <main>
+      <article>
+        <header>
+          <h1>チェスのルール</h1>
+
+          <p>
+            <strong>チェス</strong>は、<strong>2人</strong>で行う戦略ゲームです。
+            <strong>8 × 8</strong>（64マス）の盤で対戦します。
+          </p>
+        </header>
+
+        <nav aria-label="目次">
+          <h2>目次</h2>
+          <ol>
+            <li><a href="./#objective">目的</a></li>
+            <li><a href="./#setup">初期配置</a></li>
+            <li><a href="./#piece-movement">駒の動き</a></li>
+            <li><a href="./#special-moves">特別な手</a></li>
+            <li><a href="./#checkmate">チェックとチェックメイト</a></li>
+            <li><a href="./#stalemate-and-draw">ステイルメイトと引き分け</a></li>
+            <li><a href="./#end-of-game">終局</a></li>
+            <li><a href="./#art-and-literature">芸術・文学におけるチェス</a></li>
+          </ol>
+        </nav>
+
+        <section id="objective">
+          <h2>目的</h2>
+
+          <p>
+            目的は、相手のキングを<strong>チェックメイト</strong>して<strong>勝利する</strong>ことです。
+          </p>
+
+          <p>
+            実際には、<strong>チェックメイト</strong>が成立した時点で終局します。
+            つまり、キングがチェック（攻撃されている状態）にあり、チェックを回避する<strong>合法手</strong>が存在しない場合です。
+          </p>
+
+          <p>
+            チェスではキングは<strong>捕獲されません</strong>。チェックメイトが成立した時点で対局は終了します。
+          </p>
+        </section>
+
+        <section id="setup">
+          <h2>初期配置</h2>
+
+          <h3>盤</h3>
+          <ul>
+            <li>盤は<strong>8列（ファイル）</strong>×<strong>8段（ランク）</strong>のグリッドです。</li>
+            <li>マスは明色と暗色が交互に並びます。</li>
+            <li>盤の向きは、各プレイヤーから見て右下の角が<strong>明色のマス</strong>になるように置きます。</li>
+          </ul>
+
+          <h3>手番</h3>
+          <ul>
+            <li><strong>白</strong>が先手です。</li>
+            <li>続いて<strong>黒</strong>、以後交互に手を指します。</li>
+          </ul>
+
+          <h3>開始時の駒</h3>
+          <ul>
+            <li>各プレイヤーは<strong>16枚</strong>：キング1、クイーン1、ルーク2、ビショップ2、ナイト2、ポーン8を持ちます。</li>
+            <li>自陣の最奥段（ホームランク）に主要駒（キング、クイーン、ルーク、ビショップ、ナイト）を並べます。</li>
+            <li>その一段前にポーンを並べます。</li>
+          </ul>
+
+          <h3>駒の並び</h3>
+          <p>
+            白から見て、ホームランクの左から右への並びは：
+            <strong>ルーク</strong>、<strong>ナイト</strong>、<strong>ビショップ</strong>、<strong>クイーン</strong>、<strong>キング</strong>、
+            <strong>ビショップ</strong>、<strong>ナイト</strong>、<strong>ルーク</strong>です。
+          </p>
+
+          <p>
+            <strong>白のクイーン</strong>は<strong>明色のマス</strong>に、
+            <strong>黒のクイーン</strong>は<strong>暗色のマス</strong>に置かれます。
+          </p>
+
+          <p>開始局面は以下の通りです：</p>
+
+          <table class="squares" aria-label="初期配置のチェス盤">
+            <caption>チェスの開始局面。</caption>
+
+            <tbody>
+              <tr class="rank">
+                <td class="square" data-coordinate="a8" aria-label="a8, 黒のルーク">
+                  <img class="piece" draggable="true" data-code="c:r" data-style="chess" data-side="second" src="img/sides/second/representations/western/rook.svg" alt="黒のルーク">
+                </td>
+                <td class="square" data-coordinate="b8" aria-label="b8, 黒のナイト">
+                  <img class="piece" draggable="true" data-code="c:n" data-style="chess" data-side="second" src="img/sides/second/representations/western/knight.svg" alt="黒のナイト">
+                </td>
+                <td class="square" data-coordinate="c8" aria-label="c8, 黒のビショップ">
+                  <img class="piece" draggable="true" data-code="c:b" data-style="chess" data-side="second" src="img/sides/second/representations/western/bishop.svg" alt="黒のビショップ">
+                </td>
+                <td class="square" data-coordinate="d8" aria-label="d8, 黒のクイーン">
+                  <img class="piece" draggable="true" data-code="c:q" data-style="chess" data-side="second" src="img/sides/second/representations/western/queen.svg" alt="黒のクイーン">
+                </td>
+                <td class="square" data-coordinate="e8" aria-label="e8, 黒のキング">
+                  <img class="piece" draggable="true" data-code="c:k^" data-style="chess" data-side="second" src="img/sides/second/representations/western/king.svg" alt="黒のキング">
+                </td>
+                <td class="square" data-coordinate="f8" aria-label="f8, 黒のビショップ">
+                  <img class="piece" draggable="true" data-code="c:b" data-style="chess" data-side="second" src="img/sides/second/representations/western/bishop.svg" alt="黒のビショップ">
+                </td>
+                <td class="square" data-coordinate="g8" aria-label="g8, 黒のナイト">
+                  <img class="piece" draggable="true" data-code="c:n" data-style="chess" data-side="second" src="img/sides/second/representations/western/knight.svg" alt="黒のナイト">
+                </td>
+                <td class="square" data-coordinate="h8" aria-label="h8, 黒のルーク">
+                  <img class="piece" draggable="true" data-code="c:r" data-style="chess" data-side="second" src="img/sides/second/representations/western/rook.svg" alt="黒のルーク">
+                </td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a7" aria-label="a7, 黒のポーン">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="黒のポーン">
+                </td>
+                <td class="square" data-coordinate="b7" aria-label="b7, 黒のポーン">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="黒のポーン">
+                </td>
+                <td class="square" data-coordinate="c7" aria-label="c7, 黒のポーン">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="黒のポーン">
+                </td>
+                <td class="square" data-coordinate="d7" aria-label="d7, 黒のポーン">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="黒のポーン">
+                </td>
+                <td class="square" data-coordinate="e7" aria-label="e7, 黒のポーン">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="黒のポーン">
+                </td>
+                <td class="square" data-coordinate="f7" aria-label="f7, 黒のポーン">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="黒のポーン">
+                </td>
+                <td class="square" data-coordinate="g7" aria-label="g7, 黒のポーン">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="黒のポーン">
+                </td>
+                <td class="square" data-coordinate="h7" aria-label="h7, 黒のポーン">
+                  <img class="piece" draggable="true" data-code="c:p" data-style="chess" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="黒のポーン">
+                </td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a6" aria-label="a6, 空"></td>
+                <td class="square" data-coordinate="b6" aria-label="b6, 空"></td>
+                <td class="square" data-coordinate="c6" aria-label="c6, 空"></td>
+                <td class="square" data-coordinate="d6" aria-label="d6, 空"></td>
+                <td class="square" data-coordinate="e6" aria-label="e6, 空"></td>
+                <td class="square" data-coordinate="f6" aria-label="f6, 空"></td>
+                <td class="square" data-coordinate="g6" aria-label="g6, 空"></td>
+                <td class="square" data-coordinate="h6" aria-label="h6, 空"></td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a5" aria-label="a5, 空"></td>
+                <td class="square" data-coordinate="b5" aria-label="b5, 空"></td>
+                <td class="square" data-coordinate="c5" aria-label="c5, 空"></td>
+                <td class="square" data-coordinate="d5" aria-label="d5, 空"></td>
+                <td class="square" data-coordinate="e5" aria-label="e5, 空"></td>
+                <td class="square" data-coordinate="f5" aria-label="f5, 空"></td>
+                <td class="square" data-coordinate="g5" aria-label="g5, 空"></td>
+                <td class="square" data-coordinate="h5" aria-label="h5, 空"></td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a4" aria-label="a4, 空"></td>
+                <td class="square" data-coordinate="b4" aria-label="b4, 空"></td>
+                <td class="square" data-coordinate="c4" aria-label="c4, 空"></td>
+                <td class="square" data-coordinate="d4" aria-label="d4, 空"></td>
+                <td class="square" data-coordinate="e4" aria-label="e4, 空"></td>
+                <td class="square" data-coordinate="f4" aria-label="f4, 空"></td>
+                <td class="square" data-coordinate="g4" aria-label="g4, 空"></td>
+                <td class="square" data-coordinate="h4" aria-label="h4, 空"></td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a3" aria-label="a3, 空"></td>
+                <td class="square" data-coordinate="b3" aria-label="b3, 空"></td>
+                <td class="square" data-coordinate="c3" aria-label="c3, 空"></td>
+                <td class="square" data-coordinate="d3" aria-label="d3, 空"></td>
+                <td class="square" data-coordinate="e3" aria-label="e3, 空"></td>
+                <td class="square" data-coordinate="f3" aria-label="f3, 空"></td>
+                <td class="square" data-coordinate="g3" aria-label="g3, 空"></td>
+                <td class="square" data-coordinate="h3" aria-label="h3, 空"></td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a2" aria-label="a2, 白のポーン">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="白のポーン">
+                </td>
+                <td class="square" data-coordinate="b2" aria-label="b2, 白のポーン">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="白のポーン">
+                </td>
+                <td class="square" data-coordinate="c2" aria-label="c2, 白のポーン">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="白のポーン">
+                </td>
+                <td class="square" data-coordinate="d2" aria-label="d2, 白のポーン">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="白のポーン">
+                </td>
+                <td class="square" data-coordinate="e2" aria-label="e2, 白のポーン">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="白のポーン">
+                </td>
+                <td class="square" data-coordinate="f2" aria-label="f2, 白のポーン">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="白のポーン">
+                </td>
+                <td class="square" data-coordinate="g2" aria-label="g2, 白のポーン">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="白のポーン">
+                </td>
+                <td class="square" data-coordinate="h2" aria-label="h2, 白のポーン">
+                  <img class="piece" draggable="true" data-code="C:P" data-style="chess" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="白のポーン">
+                </td>
+              </tr>
+
+              <tr class="rank">
+                <td class="square" data-coordinate="a1" aria-label="a1, 白のルーク">
+                  <img class="piece" draggable="true" data-code="C:R" data-style="chess" data-side="first" src="img/sides/first/representations/western/rook.svg" alt="白のルーク">
+                </td>
+                <td class="square" data-coordinate="b1" aria-label="b1, 白のナイト">
+                  <img class="piece" draggable="true" data-code="C:N" data-style="chess" data-side="first" src="img/sides/first/representations/western/knight.svg" alt="白のナイト">
+                </td>
+                <td class="square" data-coordinate="c1" aria-label="c1, 白のビショップ">
+                  <img class="piece" draggable="true" data-code="C:B" data-style="chess" data-side="first" src="img/sides/first/representations/western/bishop.svg" alt="白のビショップ">
+                </td>
+                <td class="square" data-coordinate="d1" aria-label="d1, 白のクイーン">
+                  <img class="piece" draggable="true" data-code="C:Q" data-style="chess" data-side="first" src="img/sides/first/representations/western/queen.svg" alt="白のクイーン">
+                </td>
+                <td class="square" data-coordinate="e1" aria-label="e1, 白のキング">
+                  <img class="piece" draggable="true" data-code="C:K^" data-style="chess" data-side="first" src="img/sides/first/representations/western/king.svg" alt="白のキング">
+                </td>
+                <td class="square" data-coordinate="f1" aria-label="f1, 白のビショップ">
+                  <img class="piece" draggable="true" data-code="C:B" data-style="chess" data-side="first" src="img/sides/first/representations/western/bishop.svg" alt="白のビショップ">
+                </td>
+                <td class="square" data-coordinate="g1" aria-label="g1, 白のナイト">
+                  <img class="piece" draggable="true" data-code="C:N" data-style="chess" data-side="first" src="img/sides/first/representations/western/knight.svg" alt="白のナイト">
+                </td>
+                <td class="square" data-coordinate="h1" aria-label="h1, 白のルーク">
+                  <img class="piece" draggable="true" data-code="C:R" data-style="chess" data-side="first" src="img/sides/first/representations/western/rook.svg" alt="白のルーク">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p>
+            特に断りがない限り、図は白番の視点（白が下）で示します。
+          </p>
+        </section>
+
+        <section id="piece-movement">
+          <h2>駒の動き</h2>
+
+          <h3>基本ルール</h3>
+          <ul>
+            <li>手番では<strong>1手</strong>を指します。自分の色の駒を<strong>1枚</strong>動かします。</li>
+            <li>駒は<strong>移動先のマス</strong>へ動きます。</li>
+            <li>移動先は<strong>空</strong>か、<strong>相手の駒</strong>があるマスでなければなりません。</li>
+            <li>自分の駒があるマスには移動できません。</li>
+            <li>移動先に相手の駒がある場合、その駒を<strong>捕獲</strong>して盤上から取り除きます。</li>
+            <li>ナイト以外の駒は、駒のあるマスを飛び越えられません（通り道が空である必要があります）。</li>
+            <li>自分のキングがチェックになる（またはチェックのままになる）手は<strong>反則手</strong>です。</li>
+          </ul>
+
+          <h3>駒ごとの動き</h3>
+
+          <h4>キング</h4>
+          <ul>
+            <li>キングは縦・横・斜めのいずれかに<strong>1マス</strong>動きます。</li>
+            <li>捕獲も同様に1マス動いて行います。</li>
+          </ul>
+
+          <h4>クイーン</h4>
+          <ul>
+            <li>クイーンは縦・横・斜めに、妨げがない限り<strong>何マスでも</strong>動けます。</li>
+            <li>捕獲も同様です。</li>
+          </ul>
+
+          <h4>ルーク</h4>
+          <ul>
+            <li>ルークは縦・横に、妨げがない限り<strong>何マスでも</strong>動けます。</li>
+            <li>捕獲も同様です。</li>
+          </ul>
+
+          <h4>ビショップ</h4>
+          <ul>
+            <li>ビショップは斜めに、妨げがない限り<strong>何マスでも</strong>動けます。</li>
+            <li>捕獲も同様です。</li>
+          </ul>
+
+          <h4>ナイト</h4>
+          <ul>
+            <li>ナイトは<strong>L字</strong>（縦か横に2マス＋直角に1マス）に動きます。</li>
+            <li>ナイトは他の駒を<strong>飛び越え</strong>られます。</li>
+            <li>捕獲は移動先の相手駒を取ることで行います。</li>
+          </ul>
+
+          <h4>ポーン</h4>
+          <p>
+            ポーンは前進と捕獲で動きが異なります。
+            白の「前」は図の上方向、黒の「前」は図の下方向です。
+          </p>
+          <ul>
+            <li>ポーンは前へ<strong>1マス</strong>進みます（移動先が空の場合）。</li>
+            <li>初手に限り、前へ<strong>2マス</strong>進めます（2マスとも空の場合）。</li>
+            <li>捕獲は前斜め（左前または右前）へ<strong>1マス</strong>動いて行います。</li>
+            <li>前へまっすぐ進む動きでは捕獲できません。</li>
+          </ul>
+        </section>
+
+        <section id="special-moves">
+          <h2>特別な手</h2>
+
+          <dl>
+            <dt>キャスリング</dt>
+            <dd>
+              <p>
+                キャスリングは、同じ側の<strong>キング</strong>と<strong>ルーク</strong>を使う特別な手です。
+                キングをルークの方向へ<strong>2マス</strong>動かし、ルークをキングの反対側の隣のマスへ移動します。
+              </p>
+
+              <p>キャスリングが可能なのは次の条件をすべて満たす場合です：</p>
+              <ul>
+                <li>キングがまだ一度も動いていない。</li>
+                <li>使用するルークがまだ一度も動いていない。</li>
+                <li>キングとそのルークの間に駒がない。</li>
+                <li>キャスリングの時点でキングが<strong>チェックではない</strong>。</li>
+                <li>キングが通過するマスが攻撃されていない。</li>
+                <li>キングの到達先のマスが攻撃されていない。</li>
+              </ul>
+            </dd>
+
+            <dt>アンパッサン</dt>
+            <dd>
+              <p>
+                アンパッサンはポーンにのみ適用されます。
+                相手のポーンが初期位置から2マス前進して、横に並ぶ位置に来たとき、
+                自分のポーンはそのポーンを「1マスだけ進んだもの」とみなして<strong>捕獲</strong>できます。
+              </p>
+
+              <p>
+                捕獲するポーンは前斜めへ1マス動いて「通過したマス」に入り、捕獲されるポーンは盤上から取り除かれます。
+              </p>
+
+              <p>
+                アンパッサンは<strong>その直後の1手</strong>に限って可能です。
+                その機会を逃すと、以後は行えません。
+              </p>
+            </dd>
+
+            <dt>ポーンの昇格</dt>
+            <dd>
+              <p>
+                ポーンが最終段（相手側の端）に到達すると<strong>昇格</strong>します。
+                ポーンは同色の<strong>クイーン</strong>、<strong>ルーク</strong>、<strong>ビショップ</strong>、<strong>ナイト</strong>のいずれかに置き換えられます。
+              </p>
+
+              <p>
+                キングへの昇格はできません。
+                選択は自由で、捕獲された駒が手元になくても構いません。
+                そのためクイーンを複数持つことも可能です。
+              </p>
+            </dd>
+          </dl>
+        </section>
+
+        <section id="checkmate">
+          <h2>チェックとチェックメイト</h2>
+
+          <h3>定義</h3>
+          <ul>
+            <li><strong>チェック</strong>：キングが相手駒に攻撃されている状態。</li>
+            <li><strong>攻撃されているマス</strong>：相手の駒が、その駒の動き（途中の遮りを考慮）に従ってそのマスの駒を捕獲できる場合、そのマスは攻撃されているとみなします。</li>
+            <li><strong>チェックを防ぐ</strong>：キングがチェックでなくなるように合法手を指すこと。</li>
+            <li><strong>チェックメイト</strong>：キングがチェックにあり、チェックを防ぐ合法手が存在しない状態。</li>
+          </ul>
+
+          <h3>「チェック」の宣言</h3>
+          <p>
+            チェックは宣言してもよいですが、必須ではありません。
+            重要なのは盤上の実際の局面です。
+          </p>
+
+          <h3>キングがチェックのとき</h3>
+          <p>キングがチェックの場合、次のような方法でチェックを防ぐ必要があります：</p>
+          <ul>
+            <li>キングを攻撃されていないマスへ移動する。</li>
+            <li>攻撃している駒を捕獲する（捕獲後にキングがチェックでないこと）。</li>
+            <li>攻撃線を遮る（遠隔攻撃の場合のみ：ルーク、ビショップ、クイーン）。</li>
+          </ul>
+        </section>
+
+        <section id="stalemate-and-draw">
+          <h2>ステイルメイトと引き分け</h2>
+
+          <h3>ステイルメイト</h3>
+          <p>
+            手番の側が
+            (1) チェックではなく、
+            (2) 指せる<strong>合法手</strong>が一つもない
+            場合、局面は<strong>ステイルメイト</strong>です。
+            このとき対局は引き分けとなります。
+          </p>
+
+          <h3>その他の引き分け</h3>
+          <ul>
+            <li>
+              <strong>合意による引き分け</strong>：
+              両者が合意すれば引き分けにできます。
+            </li>
+            <li>
+              <strong>戦力不足</strong>：
+              完全に正確な指し手でもチェックメイトが不可能な場合
+              （例：キング対キング、キング＋ビショップ対キング、キング＋ナイト対キング）。
+            </li>
+            <li>
+              <strong>同一局面の三回出現</strong>：
+              同じ局面が3回現れた場合（手番、キャスリング権、アンパッサン権などの権利も同一）、
+              引き分けになることがあります。大会規定やプラットフォームによって、申請制または自動の場合があります。
+            </li>
+            <li>
+              <strong>50手ルール</strong>：
+              片方のプレイヤーの<strong>50手</strong>（合計で<strong>100手</strong>＝100半手）が、<strong>捕獲なし</strong>かつ<strong>ポーンの移動なし</strong>で続いた場合、
+              規定により引き分けになることがあります（申請制または自動の場合があります）。
+            </li>
+            <li>
+              <strong>デッドポジション（死局）</strong>：
+              どのように続けてもチェックメイトが起こり得ない局面は、手番に関係なく引き分けです。
+            </li>
+          </ul>
+        </section>
+
+        <section id="end-of-game">
+          <h2>終局</h2>
+
+          <ul>
+            <li>
+              対局は<strong>チェックメイト</strong>（勝敗決定）、<strong>投了</strong>、または<strong>引き分け</strong>で終了します。
+            </li>
+            <li>
+              プレイヤーはいつでも<strong>投了</strong>できます。投了は敗北を認めることです。
+            </li>
+            <li>
+              持ち時間制では、規定の時間を超えると<strong>時間切れ負け</strong>になる場合があります（時間設定によります）。
+            </li>
+            <li>
+              ソフトウェア実装では、反則手（例：キングがチェックのままになる手）は通常受け付けられません。
+            </li>
+          </ul>
+        </section>
+
+        <section id="art-and-literature">
+          <h2>芸術・文学におけるチェス</h2>
+
+          <p>
+            チェスは多くの作品の題材になってきました。代表的な古典として、よく挙げられるものを2つ紹介します：
+          </p>
+
+          <dl>
+            <dt><q lang="la">Scacchi ludus</q>（1527）— マルコ・ジローラモ・ヴィーダ</dt>
+            <dd>神々のあいだの神話的なチェス対局を描いた詩。</dd>
+
+            <dt><q lang="en">Caïssa: or The Game of Chess</q>（1772）— ウィリアム・ジョーンズ</dt>
+            <dd>チェスの寓意的存在としてのカイッサを広めた詩。</dd>
+          </dl>
+
+          <figure>
+            <img
+              src="img/caissa-and-mercury-apollo-game.jpeg"
+              alt="カイッサに関連する神話的場面を描いた挿絵"
+              title="カイッサの挿絵"
+              loading="lazy">
+            <figcaption>カイッサの挿絵（パブリックドメイン）。</figcaption>
+          </figure>
+        </section>
+      </article>
+
+      <aside aria-label="関連">
+        <h2>関連</h2>
+        <p>チェス系の文化的バリエーション：</p>
+
+        <ul>
+          <li>
+            <strong><a href="https://ja.ogi.page/" rel="external">Ōgi（王棋）</a></strong> —
+            将棋に着想を得た日本のバリアント。小さな盤で、捕獲した駒を再利用できます。
+          </li>
+          <li>
+            <strong><a href="https://ja.xiongqi.page/" rel="external">Xiongqi（熊棋）</a></strong> —
+            中国象棋の要素を取り入れつつ、8 × 8 の盤で遊ぶ「パンダチェス」。
+          </li>
+        </ul>
+      </aside>
+
+      <nav aria-label="言語選択">
+        <h2>言語</h2>
+        <p>このページは他の言語でも利用できます：</p>
+
+        <ul>
+          <li><a title="Switch to English" href="https://en.chess.page/" lang="en">English</a></li>
+          <li><a title="Passer en français" href="https://fr.chess.page/" lang="fr">Français</a></li>
+          <!-- <li><a title="日本語に切り替える" href="https://ja.chess.page/" lang="ja">日本語</a></li> -->
+          <li><a title="เปลี่ยนเป็นภาษาไทย" href="https://th.chess.page/" lang="th">ภาษาไทย</a></li>
+          <li><a title="切换到中文" href="https://zh.chess.page/" lang="zh">中文</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <footer>
+      <p>
+        このページおよび内容は
+        <a rel="license external" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0</a>
+        によりパブリックドメインとして提供されています。
+        許可を求めずに、複製・改変・再配布できます。
+      </p>
+    </footer>
+  </body>
+</html>
