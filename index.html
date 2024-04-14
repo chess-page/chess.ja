@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr" itemscope itemtype="https://schema.org/Game">
+  <head>
+    <title>チェス：ゲームの王</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="チェス - ゲームの王">
+    <meta name="keywords" content="チェス, ルール, ゲーム">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="チェス：ゲームの王">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ja.chess.page/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="チェス：ゲームの王">
+
+    <link rel="alternate" hreflang="en" href="https://en.chess.page/">
+    <link rel="alternate" hreflang="fr" href="https://fr.chess.page/">
+    <!-- <link rel="alternate" hreflang="ja" href="https://ja.chess.page/"> -->
+    <link rel="alternate" hreflang="th" href="https://th.chess.page/">
+    <link rel="alternate" hreflang="zh" href="https://zh.chess.page/">
+
+    <link rel="canonical" href="https://ja.chess.page/">
+
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
+
+    <link rel="stylesheet" href="css/props.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/all.css" media="all">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="stylesheet" href="css/screen.css" media="screen">
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Game",
+        "name": "チェス",
+        "description": "チェス - ゲームの王",
+        "keywords": "チェス, ルール, ゲーム",
+        "url": "https://ja.chess.page/",
+        "datePublished": "2024-04-11"
+      }
+    </script>
+
+    <script type="module">
+      import { enhanceArticle } from './js/summary-nav-module.js';
+      enhanceArticle();
+    </script>
+  </head>
+
+  <body>
+    <article>
+      <header>
+        <h1>チェスのルール</h1>
+
+        <p><strong>チェス</strong>、別名<strong>ゲームの王</strong>は、戦略ボードゲームです。</p>
+      </header>
+
+      <nav aria-label="目次">
+      </nav>
+
+      <section id="objective">
+        <h2>目標</h2>
+
+        <p>チェスの目標は、相手の王をチェックメイトにすることです。つまり、敵の王を捕捉できない位置に置くことを意味します。</p>
+      </section>
+      <section id="game-setup">
+        <h2>ゲームのセットアップ</h2>
+
+        <ul>
+          <li>チェス盤は、交互に明るいマスと暗いマスが配置された8×8のグリッドです。</li>
+          <li>各プレーヤーは、王1、クイーン1、ルーク2、ナイト2、ビショップ2、ポーン8の合計16個の駒でゲームを開始します。</li>
+          <li>駒は特定の配置で盤上に配置されます：各プレーヤーに最も近い2つの列には、駒が配置され、前列にはポーン、その後ろに他の駒が配置されます。</li>
+          <li>盤は、各プレーヤーの右下のマスが明るいマスになるように配置されます。</li>
+        </ul>
+      </section>
+      <section id="movement-of-pieces">
+        <h2>駒の移動</h2>
+
+        <ul>
+          <li>
+            各タイプの駒は、特定の方法で移動します：
+
+            <ul>
+              <li>王はどの方向にも1マス移動できます。</li>
+              <li>クイーンは、水平、垂直、または対角線上の任意の数のマスに移動できます。</li>
+              <li>ルークは、水平または垂直の任意の数のマスに移動できます。</li>
+              <li>ナイトはL字型に移動します：1方向（水平または垂直）に2マス、それから直角方向に1マス。</li>
+              <li>ビショップは、対角線上の任意の数のマスに移動できます。</li>
+              <li>ポーンは前方に1マス進むことができますが、最初の移動時には2マス前進するオプションがあります。ポーンは前方の斜め1マスで駒を取ります。</li>
+            </ul>
+          </li>
+          <li>駒は他の駒を通過することはできませんが、ナイトは他の駒を飛び越えることができます。</li>
+          <li>駒が相手の駒が置かれたマスに移動すると、その駒がキャプチャされて盤から取り除かれます。</li>
+        </ul>
+      </section>
+
+      <section id="special-moves">
+        <h2>特殊な動き</h2>
+
+        <dl>
+          <dt>キャスリング</dt>
+          <dd>キャスリングに使用される王または飛車が以前に動いていない場合、かつその間に駒がない場合、王は飛車に向かって2マス移動し、飛車は王を飛び越えて隣のマスに移動します。これは王を保護し、飛車を活性化するための特別な動きです。</dd>
+
+          <dt>アンパスアン</dt>
+          <dd>ポーンが初期位置から2マス前進して隣の敵のポーンの横に着地した場合、相手はそれを1マス前進した場合と同様に捕獲できます。これはポーンが2マス前進した直後に行われなければなりません。そうでないと、機会は失われます。</dd>
+
+          <dt>ポーンの昇格</dt>
+          <dd>ポーンが盤の反対側に到達すると、他の任意の駒（キングを除く）に昇格することができます。</dd>
+        </dl>
+      </section>
+
+      <section id="check-and-checkmate">
+        <h2>チェックとチェックメイト</h2>
+
+        <ul>
+          <li>プレイヤーのキングが捕獲される危険にさらされている場合（まだ捕獲されていない場合）、それはチェックと呼ばれます。プレイヤーは捕獲の脅威を取り除くために動かさなければなりません。</li>
+          <li>プレイヤーのキングがチェックされており、脅威を取り除くための合法的な動きがない場合、それはチェックメイトであり、ゲームは終了します。キングがチェックメイトされたプレイヤーがゲームに負けます。</li>
+        </ul>
+      </section>
+
+      <section id="stalemate-and-draw">
+        <h2>持ち駒と引き分け</h2>
+
+        <ul>
+          <li>持ち駒は、手番のプレイヤーが合法的な動きを持たず、そのプレイヤーのキングがチェックされていない場合に発生します。この場合、ゲームは引き分け（タイ）となります。プレイヤーはチェックメイトされていませんが、合法的な動きがありません。</li>
+          <li>持ち駒による引き分け：どちらのプレイヤーもチェックメイトを強制するのに十分な駒を持っていない場合（例：キング対キング、キングとビショップ対キング）、ゲームは引き分けとなります。</li>
+          <li>三回の同一局面による引き分け：同じプレイヤーが同じ局面で同じ可能な動きを3回繰り返すと、ゲームは引き分けとなります。</li>
+        </ul>
+      </section>
+
+      <section id="ending-the-game">
+        <h2>ゲームの終了</h2>
+
+        <ul>
+          <li>ゲームはチェックメイト、持ち駒、またはプレイヤー間の合意、材料不足、または三回の繰り返しによる引き分けによって終了することがあります。</li>
+          <li>プレイヤーが合法的な動きをすることができない場合（一般的に「行き詰まり」と呼ばれることがあります）、ゲームは終了します。</li>
+        </ul>
+      </section>
+
+      <section id="art-and-literature">
+        <h2>芸術と文学</h2>
+
+        <p>
+          チェスは芸術と文学と密接に関連する豊かな歴史を持っています。
+          2つの注目すべき作品があります：
+        </p>
+
+        <dl>
+          <dt><q>Scacchi ludus</q>（1527年）by Marco Girolamo Vida</dt>
+          <dd>この詩は、オリンポス山での神々のチェスゲームを描いています。その美しさは読者の注目を集め、後の作品、Jan Kochanowskiの詩「チェス」などに影響を与えました。</dd>
+
+          <dt><q>Caïssa: or The Game of Chess</q>（1772年）by William Jones</dt>
+          <dd>この詩は、チェスの精神を表す神話的なキャラクターであるCaïssaを紹介しました。</dd>
+        </dl>
+
+        <p>
+          これらの作品はチェス文化に持続的な影響を与えました。
+          文学、ゲームの解析、そして芸術でも参照されています。Scacchi ludusとCaïssaは、チェスの文化遺産の重要な側面として残っています。
+        </p>
+
+        <picture>
+          <img src="img/caissa-and-mercury-apollo-game.jpeg" alt="カイサと水星、アポロがオリンポス山での伝説の試合を描いたイラスト" title="カイサとスカッチャ・ルドゥスのイラスト">
+        </picture>
+      </section>
+    </article>
+
+    <nav aria-label="言語選択">
+      <p>他の言語でも利用可能です：</p>
+
+      <ul>
+          <li><a title="英語に切り替え" href="https://en.chess.page/" lang="en">English</a></li>
+          <li><a title="フランス語に切り替え" href="https://fr.chess.page/" lang="fr">Français</a></li>
+          <li><a title="タイ語に切り替え" href="https://th.chess.page/" lang="th">ภาษาไทย</a></li>
+          <li><a title="中国語に切り替え" href="https://zh.chess.page/" lang="zh">中文</a></li>
+      </ul>
+    </nav>
+
+    <footer>
+      <p>
+        <a href="https://github.com/chess-page/chess.ja/edit/main/index.html" rel="external">GitHubでこのページを編集する</a>
+      </p>
+    </footer>
+  </body>
+</html>
