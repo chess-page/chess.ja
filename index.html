@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr" itemscope itemtype="https://schema.org/Game">
   <head>
-    <title>チェス：ゲームの王</title>
+    <title>チェスのルール：ゲームの王を学ぼう</title>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="チェス - ゲームの王">
-    <meta name="keywords" content="チェス, ルール, ゲーム">
+    <meta name="description" content="チェスの完全なルールを発見しよう：駒の動き、特殊な動き、チェックメイト、そしてこの千年の戦略ゲームの文化的バリエーション。">
+    <meta name="keywords" content="チェスのルール, チェスゲーム, チェスの遊び方, チェックメイト, キャスリング, 昇格, アンパッサン, チェスのバリエーション, チェス戦略">
     <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="チェス：ゲームの王">
+    <meta property="og:title" content="チェスのルール：ゲームの王を学ぼう">
+    <meta property="og:description" content="チェスルールの完全ガイド：この古典的な戦略ゲームをマスターするための動き、駒の取り方、特殊な戦術、そして終局。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ja.chess.page/">
+    <meta property="og:image" content="https://ja.chess.page/img/caissa-and-mercury-apollo-game.jpeg">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="Chess Page">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="チェス：ゲームの王">
+    <meta name="twitter:title" content="チェスのルール：ゲームの王を学ぼう">
+    <meta name="twitter:description" content="チェスルールの完全ガイド：この古典的な戦略ゲームをマスターするための動き、駒の取り方、特殊な戦術、そして終局。">
+    <meta name="twitter:image" content="https://ja.chess.page/img/caissa-and-mercury-apollo-game.jpeg">
 
     <link rel="alternate" hreflang="en" href="https://en.chess.page/">
     <link rel="alternate" hreflang="fr" href="https://fr.chess.page/">
-    <!-- <link rel="alternate" hreflang="ja" href="https://ja.chess.page/"> -->
+    <link rel="alternate" hreflang="ja" href="https://ja.chess.page/">
     <link rel="alternate" hreflang="th" href="https://th.chess.page/">
     <link rel="alternate" hreflang="zh" href="https://zh.chess.page/">
+    <link rel="alternate" hreflang="x-default" href="https://chess.page/">
 
     <link rel="canonical" href="https://ja.chess.page/">
 
@@ -36,16 +43,24 @@
         "@context": "https://schema.org",
         "@type": "Game",
         "name": "チェス",
-        "description": "チェス - ゲームの王",
-        "keywords": "チェス, ルール, ゲーム",
+        "alternateName": "ゲームの王",
+        "description": "チェスは、64マスのボード上で16個の駒を持つ二人のプレイヤーが対戦する千年の戦略ゲームです。目的は相手の王をチェックメイトすることです。",
         "url": "https://ja.chess.page/",
-        "datePublished": "2024-04-11"
+        "datePublished": "2024-04-11",
+        "dateModified": "2024-04-11",
+        "image": "https://ja.chess.page/img/caissa-and-mercury-apollo-game.jpeg",
+        "keywords": "チェス, チェスのルール, 戦略ゲーム, チェックメイト, チェスの駒",
+        "gameLocation": "ゲームボード",
+        "numberOfPlayers": "2",
+        "educationalUse": "戦略, 論理, 予測",
+        "inLanguage": "ja-JP",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "price": "0",
+          "priceCurrency": "JPY"
+        }
       }
-    </script>
-
-    <script type="module">
-      import { enhanceArticle } from './js/summary-nav-module.js';
-      enhanceArticle();
     </script>
   </head>
 
@@ -53,127 +68,143 @@
     <article>
       <header>
         <h1>チェスのルール</h1>
-
-        <p><strong>チェス</strong>、別名<strong>ゲームの王</strong>は、戦略ボードゲームです。</p>
+        <p>
+          <strong>チェス</strong>は、しばしば<strong>ゲームの王</strong>と呼ばれ、思考力、先読み、そして創造性を融合させた千年の歴史を持つ戦略ゲームです。
+        </p>
       </header>
 
       <nav aria-label="目次">
+        <h2>目次</h2>
+        <ol>
+          <li><a href="./#objective">ゲームの目的</a></li>
+          <li><a href="./#setup">セットアップ</a></li>
+          <li><a href="./#movement-of-pieces">駒の動き</a></li>
+          <li><a href="./#special-moves">特殊な動き</a></li>
+          <li><a href="./#check-and-checkmate">チェックとチェックメイト</a></li>
+          <li><a href="./#stalemate-and-draw">ステイルメイトと引き分け</a></li>
+          <li><a href="./#end-of-game">ゲームの終了</a></li>
+          <li><a href="./#chess-in-art-and-literature">芸術と文学におけるチェス</a></li>
+        </ol>
       </nav>
 
       <section id="objective">
-        <h2>目標</h2>
-
-        <p>チェスの目標は、相手の王をチェックメイトにすることです。つまり、敵の王を捕捉できない位置に置くことを意味します。</p>
+        <h2>ゲームの目的</h2>
+        <p>チェスの目的は、相手の王をチェックメイトにすることです。これは、敵の王を駒に捕獲される危険にさらし（チェック）、その脅威から逃れる手段がない状態に置くことを意味します。</p>
       </section>
-      <section id="game-setup">
-        <h2>ゲームのセットアップ</h2>
 
+      <section id="setup">
+        <h2>セットアップ</h2>
         <ul>
-          <li>チェス盤は、交互に明るいマスと暗いマスが配置された8×8のグリッドです。</li>
-          <li>各プレーヤーは、王1、クイーン1、ルーク2、ナイト2、ビショップ2、ポーン8の合計16個の駒でゲームを開始します。</li>
-          <li>駒は特定の配置で盤上に配置されます：各プレーヤーに最も近い2つの列には、駒が配置され、前列にはポーン、その後ろに他の駒が配置されます。</li>
-          <li>盤は、各プレーヤーの右下のマスが明るいマスになるように配置されます。</li>
+          <li>チェス盤は、8×8のグリッドを形成する64個の交互に配置された明るいマスと暗いマスで構成されています。</li>
+          <li>各プレイヤーは16個の駒でゲームを始めます：王1つ、クイーン1つ、ルーク2つ、ナイト2つ、ビショップ2つ、ポーン8つです。</li>
+          <li>初期配置では、各プレイヤーの前の2段目にポーンを、1段目に他の駒を正確な順序で配置します。</li>
+          <li>チェス盤は、各プレイヤーの右下に白いマスがくるように配置する必要があります。</li>
         </ul>
       </section>
-      <section id="movement-of-pieces">
-        <h2>駒の移動</h2>
 
+      <section id="movement-of-pieces">
+        <h2>駒の動き</h2>
         <ul>
           <li>
-            各タイプの駒は、特定の方法で移動します：
-
+            各駒は特定のルールに従って動きます：
             <ul>
-              <li>王はどの方向にも1マス移動できます。</li>
-              <li>クイーンは、水平、垂直、または対角線上の任意の数のマスに移動できます。</li>
-              <li>ルークは、水平または垂直の任意の数のマスに移動できます。</li>
-              <li>ナイトはL字型に移動します：1方向（水平または垂直）に2マス、それから直角方向に1マス。</li>
-              <li>ビショップは、対角線上の任意の数のマスに移動できます。</li>
-              <li>ポーンは前方に1マス進むことができますが、最初の移動時には2マス前進するオプションがあります。ポーンは前方の斜め1マスで駒を取ります。</li>
+              <li>王はどの方向にも1マス動くことができます。</li>
+              <li>クイーンはすべての方向（水平、垂直、または斜め）に任意のマス数だけ動くことができます。</li>
+              <li>ルークは水平または垂直に任意のマス数だけ動くことができます。</li>
+              <li>ナイトは「L字型」に動きます：1方向（水平または垂直）に2マス進み、そこから垂直方向に1マス動きます。</li>
+              <li>ビショップは斜めに任意のマス数だけ動くことができます。</li>
+              <li>ポーンは前方に1マス進みますが、初めての動きでは2マス前進することができます。ポーンは前方の斜め1マスで駒を取ります。</li>
             </ul>
           </li>
-          <li>駒は他の駒を通過することはできませんが、ナイトは他の駒を飛び越えることができます。</li>
-          <li>駒が相手の駒が置かれたマスに移動すると、その駒がキャプチャされて盤から取り除かれます。</li>
+          <li>駒は他の駒を通り抜けることはできません。ただし、ナイトは例外で、他の駒を飛び越えることができます。</li>
+          <li>駒が相手の駒のあるマスに移動すると、その相手の駒は取られて盤から取り除かれます。</li>
         </ul>
       </section>
 
       <section id="special-moves">
         <h2>特殊な動き</h2>
-
         <dl>
           <dt>キャスリング</dt>
-          <dd>キャスリングに使用される王または飛車が以前に動いていない場合、かつその間に駒がない場合、王は飛車に向かって2マス移動し、飛車は王を飛び越えて隣のマスに移動します。これは王を保護し、飛車を活性化するための特別な動きです。</dd>
+          <dd>関係する王とルークがまだ動いておらず、その間に駒がない場合、王はルークに向かって2マス動き、ルークは王を飛び越えて隣のマスに移動します。この特殊な動きにより、王を安全な位置に配置しながらルークを活性化することができます。</dd>
 
-          <dt>アンパスアン</dt>
-          <dd>ポーンが初期位置から2マス前進して隣の敵のポーンの横に着地した場合、相手はそれを1マス前進した場合と同様に捕獲できます。これはポーンが2マス前進した直後に行われなければなりません。そうでないと、機会は失われます。</dd>
+          <dt>アンパッサン</dt>
+          <dd>ポーンが初期位置から2マス前進し、相手のポーンの横に来た場合、相手のポーンは、そのポーンが1マスだけ進んだかのように捕獲することができます。この捕獲は、ポーンが2マス進んだ直後に行われなければなりません。そうでなければ、その機会は失われます。</dd>
 
           <dt>ポーンの昇格</dt>
-          <dd>ポーンが盤の反対側に到達すると、他の任意の駒（キングを除く）に昇格することができます。</dd>
+          <dd>ポーンが最終段（盤の反対側の端）に到達すると、昇格して同じ色の他の駒（王を除く）に変身することができます。通常、価値を最大化するためにクイーンに昇格させます。</dd>
         </dl>
       </section>
 
       <section id="check-and-checkmate">
         <h2>チェックとチェックメイト</h2>
-
         <ul>
-          <li>プレイヤーのキングが捕獲される危険にさらされている場合（まだ捕獲されていない場合）、それはチェックと呼ばれます。プレイヤーは捕獲の脅威を取り除くために動かさなければなりません。</li>
-          <li>プレイヤーのキングがチェックされており、脅威を取り除くための合法的な動きがない場合、それはチェックメイトであり、ゲームは終了します。キングがチェックメイトされたプレイヤーがゲームに負けます。</li>
+          <li>相手の駒に捕獲される脅威にさらされている場合、王はチェック状態にあります。プレイヤーはこの脅威を取り除く動きをしなければなりません。</li>
+          <li>チェックメイトは、王がチェック状態にあり、その脅威を取り除く合法的な動きがない場合に起こります。チェックメイトされた王を持つプレイヤーはゲームに負けます。</li>
         </ul>
       </section>
 
       <section id="stalemate-and-draw">
-        <h2>持ち駒と引き分け</h2>
-
+        <h2>ステイルメイトと引き分け</h2>
         <ul>
-          <li>持ち駒は、手番のプレイヤーが合法的な動きを持たず、そのプレイヤーのキングがチェックされていない場合に発生します。この場合、ゲームは引き分け（タイ）となります。プレイヤーはチェックメイトされていませんが、合法的な動きがありません。</li>
-          <li>持ち駒による引き分け：どちらのプレイヤーもチェックメイトを強制するのに十分な駒を持っていない場合（例：キング対キング、キングとビショップ対キング）、ゲームは引き分けとなります。</li>
-          <li>三回の同一局面による引き分け：同じプレイヤーが同じ局面で同じ可能な動きを3回繰り返すと、ゲームは引き分けとなります。</li>
+          <li>ステイルメイトは、手番のプレイヤーが合法的な動きを行うことができず、かつ王がチェック状態にない場合に発生します。この場合、ゲームは引き分け（タイ）と宣言されます。</li>
+          <li>駒不足による引き分け：どちらのプレイヤーもチェックメイトを強制するのに十分な駒を持っていない場合（例：王対王、王とビショップ対王）、ゲームは引き分けとなります。</li>
+          <li>同一局面の繰り返しによる引き分け：同じプレイヤーが手番で、同じ局面が3回発生し、同じ動きの可能性がある場合、ゲームは引き分けと宣言されます。</li>
         </ul>
       </section>
 
-      <section id="ending-the-game">
+      <section id="end-of-game">
         <h2>ゲームの終了</h2>
-
         <ul>
-          <li>ゲームはチェックメイト、持ち駒、またはプレイヤー間の合意、材料不足、または三回の繰り返しによる引き分けによって終了することがあります。</li>
-          <li>プレイヤーが合法的な動きをすることができない場合（一般的に「行き詰まり」と呼ばれることがあります）、ゲームは終了します。</li>
+          <li>ゲームはチェックメイト、ステイルメイト、プレイヤー間の相互合意による引き分け、駒不足による引き分け、または3回の繰り返しによる引き分けで終了することがあります。</li>
+          <li>プレイヤーが合法的な動きを行うことができない場合（よく<q>デッドポジション</q>と呼ばれる）、ゲームは終了します。</li>
         </ul>
       </section>
 
-      <section id="art-and-literature">
-        <h2>芸術と文学</h2>
-
+      <section id="chess-in-art-and-literature">
+        <h2>芸術と文学におけるチェス</h2>
         <p>
-          チェスは芸術と文学と密接に関連する豊かな歴史を持っています。
-          2つの注目すべき作品があります：
+          チェスは芸術と文学に深く関わる豊かな歴史を持っています。
+          特に注目すべき2つの作品があります：
         </p>
-
         <dl>
-          <dt><q>Scacchi ludus</q>（1527年）by Marco Girolamo Vida</dt>
-          <dd>この詩は、オリンポス山での神々のチェスゲームを描いています。その美しさは読者の注目を集め、後の作品、Jan Kochanowskiの詩「チェス」などに影響を与えました。</dd>
+          <dt><q>Scacchi ludus</q>（1527年）マルコ・ジロラモ・ヴィダ作</dt>
+          <dd>この詩は、オリンポス山の神々の間のチェスゲームを描いています。その美しさは読者の注目を集め、ヤン・コハノフスキーの詩<q>チェス</q>などの後の作品にも影響を与えました。</dd>
 
-          <dt><q>Caïssa: or The Game of Chess</q>（1772年）by William Jones</dt>
-          <dd>この詩は、チェスの精神を表す神話的なキャラクターであるCaïssaを紹介しました。</dd>
+          <dt><q>カイッサ：またはチェスのゲーム</q>（1772年）ウィリアム・ジョーンズ作</dt>
+          <dd>この詩は、チェスの精神を表す神話的人物であるカイッサを紹介しました。彼女は以来、ゲームのミューズとなっています。</dd>
         </dl>
-
         <p>
-          これらの作品はチェス文化に持続的な影響を与えました。
-          文学、ゲームの解析、そして芸術でも参照されています。Scacchi ludusとCaïssaは、チェスの文化遺産の重要な側面として残っています。
+          これらの作品はチェス文化に永続的な影響を与えてきました。
+          文学、ゲーム分析、さらには芸術でも言及されています。<q>Scacchi ludus</q>とカイッサは、どちらもチェスの文化的遺産の重要な側面として残っています。
         </p>
-
         <picture>
-          <img src="img/caissa-and-mercury-apollo-game.jpeg" alt="カイサと水星、アポロがオリンポス山での伝説の試合を描いたイラスト" title="カイサとスカッチャ・ルドゥスのイラスト">
+          <img src="img/caissa-and-mercury-apollo-game.jpeg" alt="オリンポス山でのカイッサとマーキュリー、アポロの間の神話的なゲームを描いたイラスト" title="カイッサとスカッチルドゥスのイラスト">
         </picture>
       </section>
     </article>
 
-    <nav aria-label="言語選択">
-      <p>他の言語でも利用可能です：</p>
+    <aside>
+      <h2>関連情報</h2>
+      <p>チェスゲームの文化的バリエーションを発見しましょう：</p>
 
       <ul>
-          <li><a title="英語に切り替え" href="https://en.chess.page/" lang="en">English</a></li>
-          <li><a title="フランス語に切り替え" href="https://fr.chess.page/" lang="fr">Français</a></li>
-          <li><a title="タイ語に切り替え" href="https://th.chess.page/" lang="th">ภาษาไทย</a></li>
-          <li><a title="中国語に切り替え" href="https://zh.chess.page/" lang="zh">中文</a></li>
+        <li>
+          <strong><a href="https://ja.ogi.page/">オウギ (王棋)</a></strong> — <q>王のゲーム</q>、将棋から派生した日本のバリエーションで、縮小されたボードでプレイし、捕獲した駒を再利用する可能性があります。
+        </li>
+        <li>
+          <strong><a href="https://ja.xiongqi.page/">シオンチー (熊棋)</a></strong> — <q>パンダチェス</q>、8×8のボードで伝統的な中国のチェスを適応させたもので、西洋と東洋の要素を融合しています。
+        </li>
+      </ul>
+    </aside>
+
+    <nav aria-label="言語選択">
+      <p>他の言語でも利用可能：</p>
+
+      <ul>
+        <li><a title="英語に切り替え" href="https://en.chess.page/" lang="en">English</a></li>
+        <li><a title="フランス語に切り替え" href="https://fr.chess.page/" lang="fr">Français</a></li>
+        <li><a title="タイ語に切り替え" href="https://th.chess.page/" lang="th">ภาษาไทย</a></li>
+        <li><a title="中国語に切り替え" href="https://zh.chess.page/" lang="zh">中文</a></li>
       </ul>
     </nav>
 
